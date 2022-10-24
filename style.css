@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #4C35E0;
+}
+
+header{
+    color: white;
+    padding: 70px;
+    text-align: center;
+}
+
+header p{
+    padding-bottom: 20px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    font-family: Poppins;
+}
+
+h1{
+    font: bold 60px Poppins;
+}
+
+a{
+    color: #8174b3;
+}
+
+
+.esquerda{
+    display: flex;
+    height: 500px;
+    width: 350px;
+    background-color: white;
+    margin: 50px;
+}
+
+.meio{
+    display: flex;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    margin: 50px;
+}
+
+.direita{
+    display: flex;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    margin: 50px;
+}
+
+.popular{
+    display: flex;
+    position: absolute;
+    background-color: white;
+    justify-content: center;
+    height: 70px;
+    width: 350px;
+}
+
+.popular p{
+    font: bold 18px Poppins;
+    padding: 20px;
+    color: #614AA5;
+}
+
+.popular div{
+    width: 180px;
+    background-color: #FFE4D4;
+    display: flex;
+    align-items: center;
+
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.158);
+}
+
+.emoji h3{
+    font-size: 60px;
+}
+
+.emoji{
+    display: block;
+    padding: 0px 20px 0px 20px;
+    margin: 30px;
+    height: 100px;
+    width: 350px;
+    text-align: center;
+}
+
+.texto h2{
+    font: bold 23px Poppins;
+    color: #EBCB7C;
+}
+
+.texto p{
+    text-justify: auto;
+    color: rgba(0, 0, 0, 0.658);
+    font-weight: 200;
+    line-height: 1.6;
+}
+
+.esp{
+    color: white;
+    background-color: #4C35E0;
+    padding: 15px 25px;
+}
+
+.texto a{
+    font: bold 20px Poppins;
+}
+
+.texto{
+    display: block;
+    justify-content: center;
+    padding-top: 15px;
+    height: 450px;
+}
+
+.nota{
+    padding: 15px;
+    font: bold 50px Poppins;
+    color: #4D36D9;
+}
