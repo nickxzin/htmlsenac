@@ -1,0 +1,69 @@
+/*
+height	Sets the height of an element
+max-height	Sets the maximum height of an element
+max-width	Sets the maximum width of an element
+min-height	Sets the minimum height of an element
+min-width	Sets the minimum width of an element
+width	Sets the width of an element
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    background-image: url(gato-cat.gif);
+    color: green;
+    /*max-width: 200px;
+    Usado na responsividade de paginas*/
+}
+
+/* FUNCIONA
+body{
+    background: #ffffff url(png-clipart-cats-cats-thumbnail.png) scroll right top;
+}*/
+
+img{
+    /*A propriedade z-index especifica a ordem de pilha de um elemento (qual elemento deve ser colocado na frente ou atrás dos outros).
+    Um elemento pode ter uma ordem de pilha positiva ou negativa*/
+    z-index: -1;
+    /*Deixa a imagem ao lado que escolher(Tambem funciona com a DIV)                <p><img>Lorem..</p>*/
+    float: right;
+}
+
+div {
+    /*Mantem o tamanho em 300 ao inves de acresentar 50 (300 px do width + 25px do padding left e + 25px right)
+    Por causa do box-sizing: border-box;*/
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+    float: left;
+    /*Deixa a div embaico da div que está na esquerda*/
+    clear: left;
+  }
+
+p {
+    text-decoration: underline green double;
+}
+
+/*Position*/
+/* mouse over link (Segure e ele fica com a cor...)*/
+a:hover /*Essa pseudoclasse funciona em muitos outros elementos*/ {
+    color: hotpink;
+}
+
+/* unvisited link */
+a:link /*Essa pseudoclasse funciona em muitos outros elementos*/{
+    color: red;
+}
+
+/* visited link */
+a:visited /*Essa pseudoclasse funciona em muitos outros elementos*/{
+    color: green;
+}
+
+/* selected link */
+a:active /*Essa pseudoclasse funciona em muitos outros elementos*/{
+    color: blue;
+}
