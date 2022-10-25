@@ -7,6 +7,9 @@ min-width	Sets the minimum width of an element
 width	Sets the width of an element
 */
 
+/*Display flex é importante*/
+/*flex-direction por padrão vem como linha (row) mas é possivel mudar para column*/
+
 *{
     padding: 0;
     margin: 0;
