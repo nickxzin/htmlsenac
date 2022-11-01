@@ -1,32 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
+    font-family: Roboto, Arial, sans-serif;
 }
 
 .container{
     background-color: #333;
     border: 3px solid red;
+    color: white;
     padding: 0px;
     display: grid;
     height: 99.40vh;
+    grid-template-columns: 300px 40% 200px;
+    grid-template-rows: 70px 300px auto;
     grid-template-areas: 
-    'h h h'
-    'c c s'
-    'c c s'
-    'c c s'
-    'c c s'
-    'd d s';
+    'logo nav nav nav perfil'
+    'c c c s s'
+    'c c c s s'
+    'c c c s s'
+    'c c c s s'
+    'd d d s s';
 }
 
 .container div{
-    background-color: #ccc;
+    background-color: #0F0F0F;
     padding: 20px;
-    border: 1px solid blue;
+    border: 1px solid red;
 }
 
-#header{
-    grid-area: h;
-}
+
 
 #content{
     grid-area: c;
@@ -38,4 +42,108 @@
 
 #descri{
     grid-area: d;
+}
+
+
+
+/*Area Do Header*/
+
+.icone{
+    width: 30px;
+    height: 23px;
+}
+
+#logo{
+    /*Area para grid*/
+    grid-area: logo;
+    /*Outras configs*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: white;
+}
+
+#logo a{
+    text-decoration: none;
+    color: white;
+}
+
+#logo p{
+    display: inline;
+    font-size: 23px;
+}
+
+#nav{
+    /*Area para grid*/
+    grid-area: nav;
+    /*Outras configs*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav input{
+    padding: 10px;
+    font-size: 16px;
+    background-color: #121212;
+    color: hsl(0deg 0% 100% / 88%);
+    border-radius: 30px;
+    border-top-color: #838383;
+    border-left-color: #838383;
+    border-right-color: #303030;
+    border-bottom-color: #303030;
+    width: 600px;
+}
+
+#nav input:placeholder{
+    color: #888888;
+}
+
+#microfone{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+#microfone:hover{
+    background-color: #303030;
+    border-radius: 30px;
+}
+
+#perfil{
+    /*Area para grid*/
+    grid-area: perfil;
+    /*Outras configs*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#perfil img{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+
+#perfil div{
+    border: 1px solid #303030;
+    font-weight: 500;
+    color: #30A6FF;
+}
+
+#perfil a:hover:first-child{
+    background-color: #303030;
+    border-radius: 30px;
+}
+
+#perfil a:last-child{
+    text-decoration: none;
+}
+
+#usuario{
+    border-radius: 30px;
+    padding: 12px;
 }
