@@ -13,30 +13,26 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 300px 40% 200px;
-    grid-template-rows: 70px 300px auto;
+    grid-template-rows: 60px 300px auto;
     grid-template-areas: 
-    'logo nav nav nav perfil'
-    'c c c s s'
-    'c c c s s'
-    'c c c s s'
-    'c c c s s'
-    'd d d s s';
+    'logo nav nav nav nav perfil'
+    'c c c s s s'
+    'c c c s s s'
+    'c c c s s s'
+    'd d d s s s'
+    'd d d s s s';
 }
 
 .container div{
     background-color: #0F0F0F;
     padding: 20px;
-    border: 1px solid red;
+    
 }
 
 
 
 #content{
     grid-area: c;
-}
-
-#sidebar{
-    grid-area: s;
 }
 
 #descri{
@@ -145,4 +141,109 @@
 #usuario{
     border-radius: 30px;
     padding: 12px;
+}
+
+/*Content*/
+
+#content{
+    height: 660px;
+    padding: 18px 40px 0px 40px;
+}
+
+/*Side-Bar*/
+
+#sidebar{
+    /*Area da Grid*/
+    grid-area: s;
+    /*Outras Configs*/
+    display: flex;
+    gap: 5px;
+}
+
+.recomendados{
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    height: 94px;
+    width: 168px;
+}
+
+#sidebar h3{
+    font-family: Roboto, Arial, sans-serif;
+    display: inline;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/*Descri*/
+
+#descri{
+    height: 198.5px;
+    padding-left: 40px;
+}
+
+#descri h1{
+    font-weight: 500;
+    font-size: 19px;
+}
+
+#descri p{
+    font-weight: 400px;
+    font-size: 14px;
+    padding: 5px 0px 1px 0px;
+}
+
+#yt{
+    padding: 15px 0px 0px 0px;
+    display: flex;
+    gap: 12px;
+}
+
+#yt img{
+    border-radius: 50%;
+}
+
+.info{
+    font-size: 13px;
+    display: inline;
+    padding: 5px 0px 5px 0px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #aaa;
+}
+
+#yt a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+#verifi{
+    width: 10px;
+    height: 10px;
+    padding-left: 2px;
+}
+
+#yt p{
+    height: 16px;
+    border-radius: 30px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#yt p:hover{
+    background-color: #505050;
+}
+
+#yt p:active{
+    background-color: #727272;
+}
+
+#inscrito{
+    background-color: red;
+}
+
+#membro{
+    background-color: #29292B;
 }
