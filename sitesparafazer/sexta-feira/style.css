@@ -6,13 +6,18 @@
     font-family: Roboto, Arial, sans-serif;
 }
 
+body{
+    justify-content: center;
+    align-items: center;
+}
+
 .container{
     background-color: #333;
     color: white;
     padding: 0px;
     display: grid;
     height: 100vh;
-    grid-template-columns: 300px 40% 200px;
+    grid-template-columns: 20% 40% auto;
     grid-template-rows: 60px 300px auto;
     grid-template-areas: 
     'logo nav nav nav nav perfil'
@@ -146,9 +151,72 @@
 /*Content*/
 
 #content{
-    height: 660px;
+    height: 100%;
+    width: 100%;
     padding: 18px 40px 0px 40px;
 }
+
+@media (max-width: 600px) {
+    #content iframe{
+        width: 500px;
+        height: 400px;
+    }
+}
+@media (min-width: 1878px){
+    #content iframe{
+        width: 1180px;
+        height: 650px;
+    }
+}
+@media (max-width: 1770px){
+    #content iframe{
+        width: 1000px;
+        height: 600px;
+    }
+}
+@media (max-width: 1630px){
+    #content iframe{
+        width: 800px;
+        height: 500px;
+    }
+}
+@media (max-width: 1460px){
+    #content iframe{
+        width: 700px;
+        height: 450px;
+    }
+}
+@media (max-width: 1310px){
+    .container{
+        grid-template-areas: 
+        'logo nav perfil'
+        'c c c'
+        'c c c'
+        'c c c'
+        'd d d'
+        's s s'
+        's s s';
+    }
+    #content{
+        width: 93.8%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #content iframe{
+        width: 100%;
+        height: 600px;
+    }
+
+    #sidebar{
+        width: 100%;
+        height: 100%;
+    }
+
+    
+}
+
+
 
 /*Side-Bar*/
 
@@ -157,22 +225,48 @@
     grid-area: s;
     /*Outras Configs*/
     display: flex;
-    gap: 5px;
+    padding: 0px;
 }
 
 .recomendados{
-    display: flex;
     border-radius: 10px;
-    margin-bottom: 12px;
-    height: 94px;
-    width: 168px;
+    margin-bottom: 8px;
+    height: 110px;
+    width: 98%;
 }
 
 #sidebar h3{
     font-family: Roboto, Arial, sans-serif;
     display: inline;
+    height: 50px;
     font-weight: 500;
     font-size: 14px;
+}
+
+.videos{
+    display: grid;
+    width: 80%;
+    height: 95% ;
+    grid-template-columns: 45% auto;
+    grid-template-rows: 110px 110px;
+    grid-template-areas: 
+    'i t'
+    'i t'
+    'i t';
+}
+
+.videos div{
+    padding: 0px;
+}
+
+.imagem{
+    grid-area: i;
+    border: 2px solid red;
+}
+
+.texto{
+    grid-area: t;
+    border: 2px solid red;
 }
 
 /*Descri*/
