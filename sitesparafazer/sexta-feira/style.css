@@ -151,8 +151,12 @@ body{
 
 #content{
     height: 100%;
-    width: 100%;
+    width: 97%;
     padding: 20px 40px 0px 40px;
+}
+
+#content iframe{
+    width: 100%;
 }
 
 
@@ -162,60 +166,18 @@ body{
         height: 400px;
     }
 }
-@media (min-width: 1878px){
-    #content iframe{
-        width: 1180px;
-        height: 650px;
-    }
-}
-@media (max-width: 1770px){
-    #content iframe{
-        width: 1000px;
-        height: 600px;
-    }
-}
-@media (max-width: 1630px){
-    #content iframe{
-        width: 800px;
-        height: 500px;
-    }
-}
-@media (max-width: 1460px){
-    #content iframe{
-        width: 700px;
-        height: 450px;
-    }
-}
-@media (max-width: 1310px){
-    .container{
-        grid-template-areas: 
-        'logo nav perfil'
-        'c c c'
-        'c c c'
-        'c c c'
-        'd d d'
-        's s s'
-        's s s';
-    }
+@media (max-width: 1876px){
     #content{
-        width: 93.8%;
-        justify-content: center;
-        align-items: center;
+        width: 95%;
     }
 
-    #content iframe{
-        width: 100%;
-        height: 600px;
-    }
-
-    #sidebar{
-        width: 100%;
-        height: 100%;
-    }
-
-    
 }
 
+/* @media (max-width: 1585px){
+    #sidebar{
+        grid-template-columns: 40% 45%;
+    }
+} */
 /*Side-Bar*/
 
 #sidebar{
@@ -223,7 +185,7 @@ body{
     grid-area: s;
     /*Outras Configs*/
     display: grid;
-    grid-template-columns: 30% 35%;
+    grid-template-columns: 30% 45%;
     grid-template-rows: auto;
     gap: 10px;
 }
