@@ -430,6 +430,7 @@ body{
 @media (max-width: 330px){
     #logo{
         padding-left: 0px;
+        margin-left: -2px;
     }
 
     #usuario{
@@ -444,6 +445,10 @@ body{
 
     #descri{
         width: 90%;
+    }
+
+    #content iframe{
+        height: 180px;
     }
 }
 
