@@ -9,6 +9,7 @@
 body{
     justify-content: center;
     align-items: center;
+    background-color: #0F0F0F;
 }
 
 .container{
@@ -85,6 +86,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0.1%;
 }
 
 #nav input{
@@ -108,7 +110,6 @@ body{
     width: 20px;
     height: 20px;
     padding: 10px;
-    margin-left: 5px;
 }
 
 #microfone:hover{
@@ -139,7 +140,6 @@ body{
 }
 
 #perfil a:hover:first-child{
-    background-color: #303030;
     border-radius: 30px;
 }
 
@@ -153,6 +153,24 @@ body{
     width: 80px;
     justify-content: center;
     align-items: center;
+}
+
+.hover.login:hover{
+    background-color: #263850;
+    border-radius: 30px;
+}
+
+.hover:hover{
+    background-color: #303030;
+    border-radius: 30px;
+}
+
+.active.login:active{
+    background-color: #394d68;
+}
+
+.active:active{
+    background-color: #727272;
 }
 
 /*Content*/
@@ -238,12 +256,17 @@ body{
     }
 
     .container .imagem{
-        height: 200px;
+        height: 100px;
     }
 
     #sidebar{
         padding: 20px 20px 20px 30px;
     }
+
+    .container #sidebar{
+        grid-template-columns: 20% auto;
+    }
+    
 }
 
 @media (max-width: 755px){
@@ -263,11 +286,23 @@ body{
         width: 92.3%;
         padding: 10px 20px 0px 30px;
     }
+
+    .container #sidebar{
+        grid-template-columns: 25% auto;
+    }
 }
 
-@media (max-width: 640px){
+@media (max-width: 660px){
     #content iframe{
         height: 400px;
+    }
+
+    #content{
+        width: 90%;
+    }
+
+    .container #sidebar{
+        grid-template-columns: 30% auto;
     }
 }
 
@@ -291,6 +326,18 @@ body{
 
     #content{
         width: 88%;
+    }
+
+    .container #sidebar{
+        grid-template-columns: 35% auto;
+    }
+
+    .none{
+        display: none;
+    }
+
+    #nav{
+        margin-left: -20%;
     }
 }
 
@@ -323,9 +370,80 @@ body{
     .info{
         float: left;
     }
+
+    #perfil{
+        margin-left: -30px;
+    }
+
     #membro{
         display: flex;
         clear: left;
+    }
+}
+
+@media (max-width: 420px){
+    .container{
+        grid-template-columns: 30% 40% 20%;
+    }
+
+    #content{
+        width: 100%;
+    }
+
+    #content iframe{
+        width: 100%;
+    }
+
+    #logo{
+        width: 100px;
+        padding-left: 10px;
+    }
+
+    #nav{
+        margin-left: -20%;
+    }
+
+    .container #inscrito{
+        font-size: 7px;
+        padding-bottom: 5px;
+    }
+
+    .container #membro{
+        font-size: 7px;
+        padding-bottom: 5px;
+    }
+
+    #login{
+        font-size: 0.000000001px;
+        letter-spacing: -10px;
+    }
+
+    #usuario{
+        width: 70%;
+    }
+
+    #sidebar{
+        width: 100%;
+    }
+}
+
+@media (max-width: 330px){
+    #logo{
+        padding-left: 0px;
+    }
+
+    #usuario{
+        width: 70%;
+        padding: 11px;
+    }
+
+    #sidebar{
+        width: 90%;
+        padding-top: 15%;
+    }
+
+    #descri{
+        width: 90%;
     }
 }
 
@@ -366,6 +484,7 @@ body{
 .texto{
     display: inline;
     font-size: 14px;
+    color: white;
 }
 
 #sidebar a{
@@ -449,4 +568,13 @@ body{
 
 #membro{
     background-color: #29292B;
+    display: block;
+}
+
+#inline{
+    display: inline;
+}
+
+#login{
+    display: inline;
 }
